@@ -115,6 +115,15 @@ body, html, #app {
   flex-wrap:wrap;
 }
 
+.serv-img {
+  height:1000em;
+}
+
+.ul.grid li img {
+  height:100rem;
+  width:100rem;
+}
+
 /********************** SPECIAL **********************/
 
 .special-wrapper{
