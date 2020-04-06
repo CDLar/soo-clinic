@@ -1,13 +1,16 @@
 import React from 'react';
 import './App.css';
 import Nav from './components/Nav'
+import Special from './components/Special'
 
 function App() {
   return (
     <>
-      <Nav />
+
+      <Special />
+      {/* <Nav />
       <div className='container'>
-      </div>
+      </div> */}
     </>
   )
 }

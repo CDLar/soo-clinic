@@ -1,11 +1,12 @@
 import React from 'react'
 import logo from '../images/header.png'
+import { FaAlignJustify } from 'react-icons/fa'
 
 export default function Nav() {
     return (
         <nav className='nav-bar'>
-            <img src={logo} alt='수내과' />
-            <ul className='row'>
+            <img className='nav-logo' src={logo} alt='수내과' />
+            <ul className='row nav-desktop'>
                 <li>
                     <button className='nav-btn active teal'>Home</button>
                 </li>
@@ -19,11 +20,14 @@ export default function Nav() {
                     <button className='nav-btn brown'>특수클리닉</button>
                 </li>
                 <li>
-                    <button className='nav-btn brown'>병원방문안내</button>
+                    <button className='nav-btn brown'>방문안내</button>
                 </li>
                 <li>
                     <button className='nav-btn brown'>갤러리</button>
                 </li>
+            </ul>
+            <ul className='row nav-mobile'>
+                <FaAlignJustify size={25} />
             </ul>
         </nav>
     )
