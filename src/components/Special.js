@@ -13,7 +13,7 @@ import bloodIcon from '../images/blood-icon.png'
 export default function Special() {
     return (
         <div className='special-wrapper'>
-            <header className='special-header teal'>일반진료과목</header>
+            <header className='special-header teal'>특수클리닉</header>
 
             <div className='special-grid'>
                 <div>
