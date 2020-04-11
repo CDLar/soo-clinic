@@ -13,7 +13,7 @@ import bloodIcon from '../images/blood-icon.png'
 export default function Special() {
     return (
         <div className='card-wrapper'>
-            <header className='service-header teal'>일반진료과목</header> 
+            <header className='card-header teal'>일반진료과목</header> 
             <div className='card'>
                 <h2>X-Ray 검사</h2>
                 <img
