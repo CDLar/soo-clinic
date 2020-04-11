@@ -18,7 +18,20 @@ body, html, #app {
   html {
     font-size:100.01%;
   }
-  
+
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+  *:focus {
+  outline: 0;
+  }
+
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
@@ -102,6 +115,10 @@ body, html, #app {
     height: 4.5em;
     padding: 1vh 4%;
     align-items:center;
+    -webkit-box-shadow: 20px 20px 20px grey;
+    -moz-box-shadow:    10px 20px 20px grey;
+    box-shadow:         2px 2px 2px grey;
+    z-index:999;
   }
 
  .nav-logo {
@@ -117,12 +134,14 @@ body, html, #app {
     font-size:1rem;
     border-top: 1px solid rgba(191, 173, 127, 1);
     margin: auto 5px;
-    font-weight:700
+    font-weight:700;
+    padding-top: 1rem;
  }
 
  .nav-btn.active, .nav-btn:hover {
     border-top: 3px solid rgba(42, 138, 157, 1);
     color: #2A8A9D;
+    cursor: pointer;
  }
 
  .nav-mobile {
@@ -160,9 +179,15 @@ body, html, #app {
  .landing-wrapper {
   height:100%;
   width:100%;
+  align-items:center;
+  justify-content: center;
+  text-align:center;
+  display:flex;
  }
 
  .landing-grid {
+   width:90%;
+   margin-top:5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 35vh 35vh;
@@ -417,4 +442,12 @@ width:115px;
 
  .img-15 {
   grid-area: img-15; 
+ }
+
+/* Gallery Media Query */
+
+ @media (max-width: 670px) {
+  .gallery-grid {
+      margin: 0 10%;
+  }
  }

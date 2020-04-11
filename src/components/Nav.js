@@ -4,28 +4,66 @@ import { FaAlignJustify } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 
 export default function Nav() {
-    //const [activeBtn, setActiveBtn] = React.useState('Home')
+    const [activeBtn, setActiveBtn] = React.useState('home')
+
     return (
         <nav className='nav-bar'>
             <img className='nav-logo' src={logo} alt='수내과' />
             <ul className='row nav-desktop'>
                 <li>
-                    <NavLink to='/' exact><button className='nav-btn active teal'>Home</button></NavLink>
+                    <NavLink to='/' exact>
+                        <button
+                            onClick={() => setActiveBtn('home')}
+                            className={activeBtn === 'home' ? 'nav-btn active teal' : 'nav-btn brown'}
+                        >
+                            Home
+                    </button>
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/intro'><button className='nav-btn brown'>병원소개</button></NavLink>
+                    <NavLink to='/intro'><button
+                        onClick={() => setActiveBtn('intro')}
+                        className={activeBtn === 'intro' ? 'nav-btn active teal' : 'nav-btn brown'}
+                    >
+                        병원소개
+                    </button>
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/services'><button className='nav-btn brown'>일반진료</button></NavLink>
+                    <NavLink to='/services'><button
+                        onClick={() => setActiveBtn('services')}
+                        className={activeBtn === 'services' ? 'nav-btn active teal' : 'nav-btn brown'}
+                    >
+                        일반진료
+                    </button>
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/special'><button className='nav-btn brown'>특수클리닉</button></NavLink>
+                    <NavLink to='/special'><button
+                        onClick={() => setActiveBtn('special')}
+                        className={activeBtn === 'special' ? 'nav-btn active teal' : 'nav-btn brown'}
+                    >
+                        특수클리닉
+                    </button>
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/directions'><button className='nav-btn brown'>방문안내</button></NavLink>
+                    <NavLink to='/directions'><button
+                        onClick={() => setActiveBtn('directions')}
+                        className={activeBtn === 'directions' ? 'nav-btn active teal' : 'nav-btn brown'}
+                    >
+                        방문안내
+                    </button>
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/gallery'><button className='nav-btn brown'>갤러리</button></NavLink>
+                    <NavLink to='/gallery'><button
+                        onClick={() => setActiveBtn('gallery')}
+                        className={activeBtn === 'gallery' ? 'nav-btn active teal' : 'nav-btn brown'}
+                    >
+                        갤러리
+                    </button>
+                    </NavLink>
                 </li>
             </ul>
             <ul className='row nav-mobile'>
