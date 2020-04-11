@@ -1,6 +1,7 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 import Nav from './components/Nav'
+import Intro from './components/Intro'
 import Special from './components/Special'
 import Services from './components/Services'
 import Landing from './components/Landing'
@@ -15,6 +16,7 @@ function App() {
 
       <Switch>
         <Route path='/' exact component={Landing}/>
+        <Route path='/intro' component={Intro}/>
         <Route path='/services' component={Services}/>
         <Route path='/special' component={Special}/>
         <Route path='/gallery' component={Gallery}/>
