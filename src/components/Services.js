@@ -20,7 +20,6 @@ export default function Special() {
                     src={xrayIcon}
                     alt="X-Ray 검사"
                 />
-                <button>Learn more</button>
             </div>
             <div className='card'>
                 <h2>초음파검사</h2>

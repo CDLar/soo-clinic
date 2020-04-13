@@ -6,6 +6,7 @@ import Special from './components/Special'
 import Services from './components/Services'
 import Landing from './components/Landing'
 import Gallery from './components/Gallery'
+import Footer from './components/Footer'
 import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom'
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/gallery' component={Gallery}/>
       </Switch>
 
+      <Footer />
     </Router>
   )
 }
