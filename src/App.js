@@ -16,15 +16,15 @@ function App() {
     <Router>
       <Nav />
 
-      <Switch>
-        <Route path='/' exact component={Landing}/>
-        <Route path='/intro' component={Intro}/>
-        <Route path='/services' component={Services}/>
-        <Route path='/special' component={Special}/>
-        <Route path='/gallery' component={Gallery}/>
-      </Switch>
+        <Switch>
+          <Route path='/' exact component={Landing} />
+          <Route path='/intro' component={Intro} />
+          <Route path='/services' component={Services} />
+          <Route path='/special' component={Special} />
+          <Route path='/gallery' component={Gallery} />
+        </Switch>
 
-      <Footer />
+        <Footer />
     </Router>
   )
 }

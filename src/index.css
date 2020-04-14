@@ -235,7 +235,9 @@ body, html, #app {
   max-width:100rem;
   text-align: center;
   display:flex;
-  margin: 0.1em auto;
+  margin: 0 auto;
+  margin-top:0.2em;
+  height:100%;
 }
 
 .intro-img {
@@ -244,7 +246,7 @@ body, html, #app {
   background-size:     cover;                 
   background-repeat:   no-repeat;
   background-position: center center;
-  height:40em;
+  height:50em;
 }
 
 .intro-text {
@@ -503,4 +505,3 @@ body, html, #app {
   color:white;
   justify-content:center;
 }
-
