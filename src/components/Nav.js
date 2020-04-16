@@ -48,9 +48,9 @@ export default function Nav() {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/directions'><button
-                        onClick={() => setActiveBtn('directions')}
-                        className={activeBtn === 'directions' ? 'nav-btn active teal' : 'nav-btn brown'}
+                    <NavLink to='/map'><button
+                        onClick={() => setActiveBtn('map')}
+                        className={activeBtn === 'map' ? 'nav-btn active teal' : 'nav-btn brown'}
                     >
                         방문안내
                     </button>

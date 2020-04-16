@@ -5,6 +5,7 @@ import Intro from './components/Intro'
 import Special from './components/Special'
 import Services from './components/Services'
 import Landing from './components/Landing'
+import Map from './components/Map'
 import Gallery from './components/Gallery'
 import Footer from './components/Footer'
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/intro' component={Intro} />
           <Route path='/services' component={Services} />
           <Route path='/special' component={Special} />
+          <Route path='/map' component={Map} />
           <Route path='/gallery' component={Gallery} />
         </Switch>
 
