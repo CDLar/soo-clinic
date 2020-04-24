@@ -90,11 +90,13 @@ body, html, #app {
     -moz-box-shadow:    10px 20px 20px grey;
     box-shadow:         2px 2px 2px grey;
     z-index:999;
+    margin-bottom:.2em;
   }
 
  .nav-logo {
      width:auto;
      max-height: 4.5em;
+     margin-top: -0.4em;
  }
 
  .nav-btn {
@@ -280,7 +282,8 @@ body, html, #app {
   align-content:center;
   flex-direction:row;
   justify-content:center;
-  margin: 0 5em;
+  margin: 0 10em;
+  margin-bottom:5em;
 }
 
 .card {
@@ -302,8 +305,8 @@ body, html, #app {
   font-weight:700;
   font-family: nanumgothic-regular,sans-serif;
   width:100%;
-  padding-top:0.5em;
-  padding-bottom:0.5em;
+  padding-top:1.5em;
+  padding-bottom:1.5em;
   text-align:center;
 }
 
