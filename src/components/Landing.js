@@ -11,7 +11,7 @@ export default function Landing() {
                     <div className='panel1'>
                         <span>
                             <FaRegCalendarAlt size={50} />
-                            <a>
+                            <a className='noselect'>
                                 Appointments
                     </a>
                         </span>
@@ -19,7 +19,7 @@ export default function Landing() {
                     <div className='panel2'>
                         <span>
                             <GiHealthNormal size={50} />
-                            <a>
+                            <a className='noselect'>
                                 Doctor Info
                     </a>
                         </span>
@@ -27,7 +27,7 @@ export default function Landing() {
                     <div className='panel3'>
                         <span>
                             <FiPhoneCall size={50} />
-                            <a>
+                            <a className='noselect'>
                                 Contact Information
                     </a>
                         </span>
@@ -35,7 +35,7 @@ export default function Landing() {
                     <div className='panel4'>
                         <span>
                             <FiMapPin size={50} />
-                            <a>
+                            <a className='noselect'>
                                 Directions
                     </a>
                         </span>
