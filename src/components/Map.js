@@ -1,5 +1,6 @@
 import React from 'react'; 
-import { mapPic } from '../images/map.png'
+import  mapPic from '../images/map.png'
+
 export default function Map() {
   return ( 
     <div className='map-wrapper'>
