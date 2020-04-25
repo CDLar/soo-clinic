@@ -2,7 +2,6 @@ body, html, #app {
     margin: 0;
     padding:0;
     margin: 0;
-    height: 100vh;
     width: 100%;
     box-sizing:border-box;
     font-size:16px;
@@ -19,17 +18,18 @@ body, html, #app {
     font-size:100.01%;
   }
 
-  html {
-    overflow: scroll;
-    overflow-x: hidden;
-  }
-::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
-
-  *:focus {
+  *:focus { 
   outline: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color:black;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color:black;
   }
 
   code {
@@ -78,8 +78,10 @@ body, html, #app {
   }
 
   /********************** #NAV BAR **********************/
-
   .nav-bar {
+    position:sticky;
+    top:0%;
+    background-color:#F0F0F0;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
@@ -394,6 +396,7 @@ flex:8;
 .map-wrapper{
 display:flex;
 width:100%;
+min-height:90vh;
 }
 
 .info-box{
@@ -414,7 +417,7 @@ flex-direction:column;
 }
 
 .map-box img {
-  height:auto;
+  height:100%;
   width:100%;
 }
 

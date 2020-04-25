@@ -8,7 +8,9 @@ export default function Nav() {
 
     return (
         <nav className='nav-bar'>
-            <img className='nav-logo' src={logo} alt='수내과' />
+            <NavLink to='/' exact>
+                <img className='nav-logo' src={logo} alt='수내과' onClick={() => setActiveBtn('home')} />
+            </NavLink>
             <ul className='row nav-desktop'>
                 <li>
                     <NavLink to='/' exact>
